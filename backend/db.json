@@ -3,17 +3,20 @@
         {
             "id":1,
             "name":"Dipak",
-            "email":"dipak@gmail.com"
+            "email":"dipak@gmail.com",
+            "city" :"Kolhapur"
         },
          {
             "id":2,
             "name":"Dattatray",
-            "email":"datta@gmail.com"
+            "email":"datta@gmail.com",
+            "city" :"Pune"
         },
          {
             "id":3,
             "name":"Namit",
-            "email":"namit@gmail.com"
+            "email":"namit@gmail.com",
+            "city" :"Delhi"
         }
     ]
 }
