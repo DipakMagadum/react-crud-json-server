@@ -1,13 +1,23 @@
 import React from "react";
 import { useState } from "react";
 function AddNewData() {
-  const [id, setId] = useState("");
+  const [studentId, setId] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [city, setCity] = useState("");
 
-  const AddStudent = (e) => {
-    console.log(id, name, email, city);
+  const AddStudent = async (e) => {
+    console.log(studentId, name, email, city);
+
+    const url = "http://localhost:3000/students";
+    let response= await fetch(url,{
+      method:"Post",
+      body:JSON.stringify({studentId,name,email,city})
+    });
+    response= await response.json();
+    if(response){
+      alert("data added !")
+    }
   };
   return (
     <>
