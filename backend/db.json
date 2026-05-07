@@ -1,25 +1,25 @@
 {
   "students": [
     {
-      "id": "1",
+      "studentId": "1",
       "name": "Dipak",
       "email": "dipak@gmail.com",
       "city": "Kolhapur"
     },
     {
-      "id": "2",
+      "studentId": "2",
       "name": "Dattatray",
       "email": "datta@gmail.com",
       "city": "Pune"
     },
     {
-      "id": "3",
+      "studentId": "3",
       "name": "Namit",
       "email": "namit@gmail.com",
       "city": "Delhi"
     },
     {
-      "id": "hAXaxcAj81g",
+      "studentId": "hAXaxcAj81g",
       "name": "pratik",
       "email": "pratik@gmail.com",
       "city": "mumbai"
@@ -28,8 +28,8 @@
       "studentId": "5",
       "name": "rakesh",
       "email": "rakesh@gmail.com",
-      "city": "pune",
-      "id": "jFgsbDZRL-k"
+      "city": "pune"
+      
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
