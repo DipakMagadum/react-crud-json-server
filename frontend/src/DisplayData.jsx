@@ -31,8 +31,8 @@ function DisplayData() {
           <tbody className='text-center '>
             {
               studentData.map((students)=>(
-                <tr key={students.id} className='border border-black'>
-                  <td>{students.id}</td>
+                <tr key={students.studentId} className='border border-black'>
+                  <td>{students.studentId}</td>
                   <td>{students.name}</td>
                   <td>{students.email}</td>
                   <td>{students.city}</td>
