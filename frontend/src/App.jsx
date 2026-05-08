@@ -5,8 +5,8 @@ function App() {
 
   return (
    <>
-   <h1 className='text-center mt-2 '>React CRUD json server</h1>
-    <div className='flex justify-center gap-4'>
+  
+    <div className='flex justify-center gap-4 mt-5'>
       
         <Link
          className='bg-sky-500 p-1 rounded text-white' 
