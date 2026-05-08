@@ -49,6 +49,6 @@
       "city": "america",
       "id": "4ycXWBqubOU"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
+
 }
