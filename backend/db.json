@@ -4,32 +4,50 @@
       "studentId": "1",
       "name": "Dipak",
       "email": "dipak@gmail.com",
-      "city": "Kolhapur"
+      "city": "Kolhapur",
+      "id": "VCbp1Ri1Mhk"
     },
     {
       "studentId": "2",
       "name": "Dattatray",
       "email": "datta@gmail.com",
-      "city": "Pune"
+      "city": "Pune",
+      "id": "R5SF8vNOOqs"
     },
     {
       "studentId": "3",
       "name": "Namit",
       "email": "namit@gmail.com",
-      "city": "Delhi"
+      "city": "Delhi",
+      "id": "qUmsbYoNk_I"
     },
     {
       "studentId": "hAXaxcAj81g",
       "name": "pratik",
       "email": "pratik@gmail.com",
-      "city": "mumbai"
+      "city": "mumbai",
+      "id": "1hSrkayX7jo"
     },
     {
       "studentId": "5",
       "name": "rakesh",
       "email": "rakesh@gmail.com",
-      "city": "pune"
-      
+      "city": "pune",
+      "id": "L0hYQiBYsiA"
+    },
+    {
+      "studentId": "6",
+      "name": "rahul",
+      "email": "rahul@gmail.com",
+      "city": "kolkata",
+      "id": "SB-7UKpRdps"
+    },
+    {
+      "studentId": "7",
+      "name": "rakesh",
+      "email": "rakesh@gmail.com",
+      "city": "america",
+      "id": "4ycXWBqubOU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
