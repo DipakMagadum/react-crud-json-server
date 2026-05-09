@@ -18,24 +18,28 @@ function DisplayData() {
   }
   return (
    <>
-      <div className='flex justify-center items-center h-96'>
-          <table className='border border-black w-96 '>
-          <thead className='text-center border border-black'>
+      <div className='flex justify-center items-center h-96 '>
+          <table >
+          <thead className='bg-sky-400 '>
             <tr>
               <th>ID</th>
             <th>Name</th>
             <th>Email</th>
             <th>City</th>
+            <th>Action</th>
             </tr>
           </thead>
-          <tbody className='text-center '>
+          <tbody className='text-center  '>
             {
               studentData.map((students)=>(
-                <tr key={students.studentId} className='border border-black'>
+                <tr key={students.studentId} className='[&>td]:px-4 '>
                   <td>{students.studentId}</td>
                   <td>{students.name}</td>
                   <td>{students.email}</td>
                   <td>{students.city}</td>
+                  <td>
+                    <button className='bg-red-600 px-3 py-1 rounded-lg text-white'>Delete</button>
+                  </td>
                   
                 </tr>
               ))
