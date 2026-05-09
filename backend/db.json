@@ -20,35 +20,7 @@
       "email": "namit@gmail.com",
       "city": "Delhi",
       "id": "qUmsbYoNk_I"
-    },
-    {
-      "studentId": "hAXaxcAj81g",
-      "name": "pratik",
-      "email": "pratik@gmail.com",
-      "city": "mumbai",
-      "id": "1hSrkayX7jo"
-    },
-    {
-      "studentId": "5",
-      "name": "rakesh",
-      "email": "rakesh@gmail.com",
-      "city": "pune",
-      "id": "L0hYQiBYsiA"
-    },
-    {
-      "studentId": "6",
-      "name": "rahul",
-      "email": "rahul@gmail.com",
-      "city": "kolkata",
-      "id": "SB-7UKpRdps"
-    },
-    {
-      "studentId": "7",
-      "name": "rakesh",
-      "email": "rakesh@gmail.com",
-      "city": "america",
-      "id": "4ycXWBqubOU"
     }
-  ]
-
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
