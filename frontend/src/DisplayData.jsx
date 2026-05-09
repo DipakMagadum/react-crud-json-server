@@ -32,7 +32,7 @@ function DisplayData() {
           <tbody className='text-center  '>
             {
               studentData.map((students)=>(
-               <tr key={students.studentId} className='[&>td]:px-5 [&>td]:py-2'>
+               <tr key={students.studentId} className='[&>td]:px-5 [&>td]:py-2 hover:bg-gray-300'>
                   <td>{students.studentId}</td>
                   <td>{students.name}</td>
                   <td>{students.email}</td>
