@@ -20,7 +20,7 @@ function DisplayData() {
    <>
       <div className='flex justify-center items-center h-96 '>
           <table >
-          <thead className='bg-sky-400 '>
+          <thead className='bg-sky-600  text-white [&>tr>th]:px-5 [&>tr>th]:py-2'>
             <tr>
               <th>ID</th>
             <th>Name</th>
@@ -32,7 +32,7 @@ function DisplayData() {
           <tbody className='text-center  '>
             {
               studentData.map((students)=>(
-                <tr key={students.studentId} className='[&>td]:px-4 '>
+               <tr key={students.studentId} className='[&>td]:px-5 [&>td]:py-2'>
                   <td>{students.studentId}</td>
                   <td>{students.name}</td>
                   <td>{students.email}</td>
