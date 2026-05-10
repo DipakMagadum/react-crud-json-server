@@ -7,23 +7,28 @@ function AddNewData() {
   const [city, setCity] = useState("");
 
   const AddStudent = async (e) => {
-    console.log(studentId, name, email, city);
+    e.preventDefault();
 
     const url = "http://localhost:3000/students";
-    let response= await fetch(url,{
-      method:"Post",
-      body:JSON.stringify({studentId,name,email,city})
+    let response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ studentId, name, email, city }),
     });
-    response= await response.json();
-    if(response){
-      alert("data added !")
+    response = await response.json();
+    if (response) {
+      alert("data added !");
     }
   };
   return (
     <>
       <div className="flex justify-center items-center h-screen ">
         <form className="flex flex-col gap-3 border border-gray-400  px-4 py-3 shadow-xl rounded  bg-white w-72">
-          <label className="text-sky-500 text-lg font-serif font-semibold">ID</label>
+          <label className="text-sky-500 text-lg font-serif font-semibold">
+            ID
+          </label>
 
           <input
             className="border  border-gray-400 p-1 rounded-sm "
@@ -32,7 +37,9 @@ function AddNewData() {
             onChange={(e) => setId(e.target.value)}
           />
 
-          <label className="text-sky-500 text-lg font-serif font-semibold">Name</label>
+          <label className="text-sky-500 text-lg font-serif font-semibold">
+            Name
+          </label>
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
@@ -40,7 +47,9 @@ function AddNewData() {
             onChange={(e) => setName(e.target.value)}
           />
 
-          <label className="text-sky-500 text-lg font-serif font-semibold">Email</label>
+          <label className="text-sky-500 text-lg font-serif font-semibold">
+            Email
+          </label>
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="email"
@@ -48,7 +57,9 @@ function AddNewData() {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <label className="text-sky-500 text-lg font-serif font-semibold">City</label>
+          <label className="text-sky-500 text-lg font-serif font-semibold">
+            City
+          </label>
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
