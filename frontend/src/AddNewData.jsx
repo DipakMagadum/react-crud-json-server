@@ -23,7 +23,7 @@ function AddNewData() {
     <>
       <div className="flex justify-center items-center h-screen ">
         <form className="flex flex-col gap-3 border border-gray-400  px-4 py-3 shadow-xl rounded  bg-white w-72">
-          <label>ID</label>
+          <label className="text-sky-500 text-lg font-serif font-semibold">ID</label>
 
           <input
             className="border  border-gray-400 p-1 rounded-sm "
@@ -32,7 +32,7 @@ function AddNewData() {
             onChange={(e) => setId(e.target.value)}
           />
 
-          <label>Name</label>
+          <label className="text-sky-500 text-lg font-serif font-semibold">Name</label>
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
@@ -40,15 +40,15 @@ function AddNewData() {
             onChange={(e) => setName(e.target.value)}
           />
 
-          <label>Email</label>
+          <label className="text-sky-500 text-lg font-serif font-semibold">Email</label>
           <input
             className="border  border-gray-400 p-1 rounded-sm "
-            type="text"
+            type="email"
             placeholder="enter your email "
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <label>City</label>
+          <label className="text-sky-500 text-lg font-serif font-semibold">City</label>
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
@@ -58,7 +58,7 @@ function AddNewData() {
 
           <button
             onClick={AddStudent}
-            className="bg-sky-500 p-1 rounded-lg text-white"
+            className="bg-sky-500 p-1 rounded-lg text-white hover:bg-sky-700"
           >
             Add New Data
           </button>
