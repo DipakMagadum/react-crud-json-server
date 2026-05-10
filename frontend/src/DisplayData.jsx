@@ -20,7 +20,7 @@ function DisplayData() {
     let response = await fetch(url + "/" + id, {
       method: "DELETE",
     });
-    
+
     if (response.ok) {
       alert("Record Deleted....");
       renderData();
@@ -30,13 +30,13 @@ function DisplayData() {
     <>
       <div className="flex justify-center items-center h-96 ">
         <table>
-          <thead className="bg-sky-600  text-white [&>tr>th]:px-5 [&>tr>th]:py-2">
+          <thead className="[&>tr>th]:px-5 [&>tr>th]:py-2">
             <tr>
               <th>ID</th>
               <th>Name</th>
               <th>Email</th>
               <th>City</th>
-              <th>Action</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody className="text-center  ">
@@ -55,6 +55,11 @@ function DisplayData() {
                     className="bg-red-600 px-3 py-1 rounded-lg text-white"
                   >
                     Delete
+                  </button>
+                </td>
+                <td>
+                  <button className="bg-orange-500 px-3 py-1 rounded-lg text-white">
+                    Edit
                   </button>
                 </td>
               </tr>
