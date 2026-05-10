@@ -1,6 +1,7 @@
 import {Routes,Route,Link} from 'react-router-dom'
 import DisplayData from './DisplayData'
 import AddNewData from './AddNewData'
+import EditData from './EditData'
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
     <Routes>
       <Route path='/' element={<DisplayData/>}/>
        <Route path='/add' element={<AddNewData/>}/>
+       <Route path='/edit' element={<EditData/>}/>
     </Routes>
    </>
   )
