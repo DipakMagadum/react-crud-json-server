@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 function DisplayData() {
+
+  const navigate = useNavigate();
   const [studentData, setStudentData] = useState([]);
 
   useEffect(() => {
@@ -25,6 +28,11 @@ function DisplayData() {
       alert("Record Deleted....");
       renderData();
     }
+  };
+
+  const editData = (id) => {
+
+    navigate("/edit"+id);
   };
   return (
     <>
@@ -58,7 +66,9 @@ function DisplayData() {
                   </button>
                 </td>
                 <td>
-                  <button className="bg-orange-500 px-3 py-1 rounded-lg text-white">
+                  <button
+                  onClick={()=>editData(students.id)}
+                  className="bg-orange-500 px-3 py-1 rounded-lg text-white">
                     Edit
                   </button>
                 </td>
