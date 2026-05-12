@@ -32,7 +32,7 @@ function DisplayData() {
 
   const editData = (id) => {
 
-    navigate("/edit"+id);
+    navigate(`/edit/${id}`);
   };
   return (
     <>
