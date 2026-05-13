@@ -33,6 +33,7 @@ const url = `http://localhost:3000/students/${params.id}`;
       response = await response.json();
       if(response){
         alert("Data Update Successfully....")
+        navigate("/")
       }
     }
   return (
