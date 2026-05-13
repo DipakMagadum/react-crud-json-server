@@ -24,6 +24,12 @@ const url = `http://localhost:3000/students/${params.id}`;
     setCity(response.city);
   };
 
+    const updateData = async ()=>{
+      let response = await fetch (url,{
+        method: "PUT",
+        body:JSON.stringify({studentId,name,email,city}),
+      });
+    }
   return (
     <>
       {" "}
