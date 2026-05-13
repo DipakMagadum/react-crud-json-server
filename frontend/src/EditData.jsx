@@ -24,15 +24,19 @@ const url = `http://localhost:3000/students/${params.id}`;
     setCity(response.city);
   };
 
-    const updateData = async ()=>{
+    const updateData = async (e)=>{
+      e.preventDefault();
       let response = await fetch (url,{
         method: "PUT",
         body:JSON.stringify({studentId,name,email,city}),
       });
+      response = await response.json();
+      if(response){
+        alert("Data Update Successfully....")
+      }
     }
   return (
     <>
-      {" "}
       <div className="flex justify-center items-center h-screen ">
         <form className="flex flex-col gap-3 border border-gray-400  px-4 py-3 shadow-xl rounded  bg-white w-72">
           <label className="text-sky-500 text-lg font-serif font-semibold">
@@ -80,7 +84,9 @@ const url = `http://localhost:3000/students/${params.id}`;
             onChange={(e) => setCity(e.target.value)}
           />
 
-          <button className="bg-sky-500 p-1 rounded-lg text-white hover:bg-sky-700">
+          <button 
+          onClick={updateData}
+          className="bg-sky-500 p-1 rounded-lg text-white hover:bg-sky-700">
             Update Data
           </button>
         </form>
