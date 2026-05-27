@@ -69,7 +69,7 @@ function AddNewData() {
 
           <button
             onClick={AddStudent}
-            className="bg-sky-500 p-1 rounded-lg text-white hover:bg-sky-700"
+            className="bg-orange-500 p-1 rounded-lg text-white hover:bg-sky-700"
           >
             Add New Data
           </button>
