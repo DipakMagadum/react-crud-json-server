@@ -33,7 +33,7 @@ function AddNewData() {
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
-            placeholder="enter your id "
+            placeholder="Id"
             onChange={(e) => setId(e.target.value)}
           />
 
@@ -43,7 +43,7 @@ function AddNewData() {
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
-            placeholder="Id"
+            placeholder="Name"
             onChange={(e) => setName(e.target.value)}
           />
 
