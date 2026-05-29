@@ -43,7 +43,7 @@ function AddNewData() {
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
-            placeholder="enter your name "
+            placeholder="Id"
             onChange={(e) => setName(e.target.value)}
           />
 
@@ -53,7 +53,7 @@ function AddNewData() {
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="email"
-            placeholder="enter your email "
+            placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
           />
 
@@ -63,7 +63,7 @@ function AddNewData() {
           <input
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
-            placeholder="enter your city "
+            placeholder="City"
             onChange={(e) => setCity(e.target.value)}
           />
 
