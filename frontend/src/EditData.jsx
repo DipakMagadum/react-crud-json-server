@@ -48,7 +48,7 @@ const url = `http://localhost:3000/students/${params.id}`;
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
             value={studentId}
-            placeholder="enter your id "
+            placeholder="Id"
             onChange={(e) => setId(e.target.value)}
           />
 
@@ -59,7 +59,7 @@ const url = `http://localhost:3000/students/${params.id}`;
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
             value={name}
-            placeholder="enter your name "
+            placeholder="Name"
             onChange={(e) => setName(e.target.value)}
           />
 
@@ -70,7 +70,7 @@ const url = `http://localhost:3000/students/${params.id}`;
             className="border  border-gray-400 p-1 rounded-sm "
             type="email"
             value={email}
-            placeholder="enter your email "
+            placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
           />
 
@@ -81,7 +81,7 @@ const url = `http://localhost:3000/students/${params.id}`;
             className="border  border-gray-400 p-1 rounded-sm "
             type="text"
             value={city}
-            placeholder="enter your city "
+            placeholder="City"
             onChange={(e) => setCity(e.target.value)}
           />
 
